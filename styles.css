@@ -1,0 +1,48 @@
+/* List 1 - unordered list with red items */
+ul:first-of-type li:nth-child(3),
+ul:first-of-type li:nth-child(4) {
+    color: red;
+}
+
+/* List 2 - ordered list with larger text */
+ol li:nth-child(2),
+ol li:nth-child(4) {
+    font-size: 24px;
+}
+
+/* Red divs with p tags */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+/* Italicize first p tag in each div */
+div p:first-child {
+    font-style: italic;
+}
+
+/* White text in second div */
+div:nth-of-type(2) p {
+    color: white;
+}
+
+/* Interactive button */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+button:active {
+    border: 2px solid black;
+    width: 200px;
+    height: 150px;
+}
