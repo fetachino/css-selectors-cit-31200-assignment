@@ -23,8 +23,8 @@ div p:first-child {
     font-style: italic;
 }
 
-/* White text in second div */
-div:nth-of-type(2) p {
+/* White text in second div (except first paragraph) */
+div:nth-of-type(2) p:not(:first-child) {
     color: white;
 }
 
